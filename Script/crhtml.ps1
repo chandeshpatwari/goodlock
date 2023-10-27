@@ -8,11 +8,25 @@ if (!(Test-Path "$PSScriptRoot\apps.json")) {
     $apkmirrorbase = 'https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s='
     $android13only = '&minapi-min=33&minapi-max=33'
 
-    # Create an HTML content string
+    # Create an HTML content string with a black background and updated link styles
     $htmlContent = @'
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+        background-color: black; /* Set the background color to black */
+        color: white; /* Set the text color to white */
+    }
+    a {
+        color: #00BFFF; /* Change the link color to a pleasant blue */
+        text-decoration: none;
+    }
+    a:hover {
+        color: #1E90FF; /* Change the hover color to a lighter blue */
+        text-decoration: underline;
+    }
+</style>
 <title>Samsung Addons</title>
 </head>
 <body>
@@ -43,6 +57,6 @@ if (!(Test-Path "$PSScriptRoot\apps.json")) {
 </html>
 '@
 
-    # Write the HTML content to a file
+    # Save the HTML content to the specified directory and file
     $htmlContent | Out-File "$PSScriptRoot\..\docs\index.html"
 }
