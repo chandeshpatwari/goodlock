@@ -31,6 +31,8 @@ if (!(Test-Path "$PSScriptRoot\apps.json")) {
 </head>
 <body>
 <h1>Samsung Addons</h1>
+
+<a href="market://details?id=yuh.yuh.finelock">Fine Lock</a>
 '@
 
     # Generate content for all sections
