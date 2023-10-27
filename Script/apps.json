@@ -1,6 +1,12 @@
 {
     "GoodLock": [
         {
+            "Name": "GOOD LOCK",
+            "PackageName": "com.samsung.android.goodlock",
+            "StoreID": "good3",
+            "Description": "Module launcher & dependency handler."
+        },
+        {
             "Name": "Edge Lighting+",
             "PackageName": "com.samsung.android.edgelightingplus",
             "StoreID": "edge7",
@@ -11,12 +17,6 @@
             "PackageName": "com.samsung.android.app.edgetouch",
             "StoreID": "edgetouch",
             "Description": "Prevent accidental edge touches."
-        },
-        {
-            "Name": "GOOD LOCK",
-            "PackageName": "com.samsung.android.goodlock",
-            "StoreID": "good3",
-            "Description": "Module launcher & dependency handler."
         },
         {
             "Name": "Home Up",
@@ -105,6 +105,18 @@
     ],
     "GoodGuardians": [
         {
+            "Name": "GOOD GUARDIANS",
+            "PackageName": "com.android.samsung.utilityapp",
+            "StoreID": "ikphswywj",
+            "Description": "Improve your Galaxy smartphone's performance."
+        },
+        {
+            "Name": "GOOD GUARDIANS AGENT",
+            "PackageName": "com.android.samsung.utilityagent",
+            "StoreID": "",
+            "Description": "Dependency."
+        },
+        {
             "Name": "Battery Guardian",
             "PackageName": "com.samsung.android.statsd",
             "StoreID": "battery10",
@@ -121,18 +133,6 @@
             "PackageName": "com.samsung.android.appbooster",
             "StoreID": "bqymrzoig",
             "Description": "Galaxy App Booster transfers executable files of each app to boost them up."
-        },
-        {
-            "Name": "GOOD GUARDIANS AGENT",
-            "PackageName": "com.android.samsung.utilityapp",
-            "StoreID": "ikphswywj",
-            "Description": "Improve your Galaxy smartphone's performance."
-        },
-        {
-            "Name": "GOOD GUARDIANS AGENT",
-            "PackageName": "com.android.samsung.utilityagent",
-            "StoreID": "",
-            "Description": "Dependency."
         },
         {
             "Name": "Media File Guardian",
