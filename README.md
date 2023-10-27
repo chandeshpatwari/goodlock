@@ -1,1 +1,0 @@
-# goodlock.github.io
