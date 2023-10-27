@@ -47,7 +47,7 @@ if (!(Test-Path "$PSScriptRoot\apps.json")) {
 
         foreach ($item in $sectionData) {
             $htmlContent += @"
-    <li> <a href='$galaxystore$($item.StoreID)'>$($item.Name)</a> <a href='market://details?id=$($item.PackageName)'>[AppStore]</a> <a href='$apkmirrorbase$($item.PackageName)'>[ApkMirror]</a> <a href='$apkmirrorbase$($item.PackageName)$android13only'>[ApkMirror Android 13]</a>: $($item.Description)</li>
+    <li> <a href='$galaxystore$($item.StoreID)'>$($item.Name)</a> <a href='market://details?id=$($item.PackageName)'>[Store]</a> <a href='$apkmirrorbase$($item.PackageName)'>[ApkMirror]</a> <a href='$apkmirrorbase$($item.PackageName)$android13only'>[Android 13]</a>: $($item.Description)</li>
 "@
         }
 
