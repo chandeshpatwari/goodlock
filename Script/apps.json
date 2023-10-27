@@ -13,7 +13,7 @@
             "Description": "Prevent accidental edge touches."
         },
         {
-            "Name": "Good Lock",
+            "Name": "GOOD LOCK",
             "PackageName": "com.samsung.android.goodlock",
             "StoreID": "good3",
             "Description": "Module launcher & dependency handler."
@@ -108,13 +108,13 @@
             "Name": "Battery Guardian",
             "PackageName": "com.samsung.android.statsd",
             "StoreID": "battery10",
-            "Description": "Battery Guardian detects bad app's behavior and does not allow them running on your device."
+            "Description": "Detects bad app's behavior and does not allow them running on your device."
         },
         {
             "Name": "Battery Tracker",
             "PackageName": "com.android.samsung.batteryusage",
             "StoreID": "battery8",
-            "Description": "Battery Tracker lets you know the usage of applications within a day or week in your selected time. From now on, tracking the most battery consuming elements is easier than ever!"
+            "Description": "Check usage of applications within a day or week in your selected time."
         },
         {
             "Name": "Galaxy App Booster",
@@ -123,13 +123,13 @@
             "Description": "Galaxy App Booster transfers executable files of each app to boost them up."
         },
         {
-            "Name": "Good Guardians - the new name of Galaxy Labs",
+            "Name": "GOOD GUARDIANS AGENT",
             "PackageName": "com.android.samsung.utilityapp",
             "StoreID": "ikphswywj",
             "Description": "Improve your Galaxy smartphone's performance."
         },
         {
-            "Name": "Good Guardians Agent",
+            "Name": "GOOD GUARDIANS AGENT",
             "PackageName": "com.android.samsung.utilityagent",
             "StoreID": "",
             "Description": "Dependency."
@@ -138,19 +138,19 @@
             "Name": "Media File Guardian",
             "PackageName": "com.samsung.android.mediaguardian",
             "StoreID": "media1",
-            "Description": "Media guardian offers a way to delete hidden files for edited version. It provides a solution to clean media files that have stopped working."
+            "Description": "Delete hidden files for edited version & clean media files that have stopped working."
         },
         {
             "Name": "Memory Guardian",
             "PackageName": "com.samsung.android.memoryguardian",
             "StoreID": "memory7",
-            "Description": "Memory Guardian offers a way to track device performance based on memory usage, and provide function to clean up memory."
+            "Description": "Track device performance based on memory usage & clean up memory."
         },
         {
             "Name": "Thermal Guardian",
             "PackageName": "com.samsung.android.thermalguardian",
             "StoreID": "thermal2",
-            "Description": "Thermal Guardian offers a way to track and manage device’s temperature."
+            "Description": "Track and manage device’s temperature."
         }
     ],
     "ZandSSeriesExclusive": [
