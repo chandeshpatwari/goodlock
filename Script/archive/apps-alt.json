@@ -1,0 +1,106 @@
+{
+    "GoodLock": {
+        "LockStar": [
+            {
+                "PackageName": "com.samsung.systemui.lockstar",
+                "Details": "Customize Lock Screen"
+            }
+        ],
+        "MultiStar": [
+            {
+                "PackageName": "com.samsung.android.multistar",
+                "Details": "Enjoy enhanced Multiwindow experience."
+            }
+        ],
+        "Nice Shot": [
+            {
+                "PackageName": "com.samsung.android.app.captureplugin",
+                "Details": "Customise Screen Capture"
+            }
+        ],
+        "NotiStar": [
+            {
+                "PackageName": "com.samsung.systemui.notilus",
+                "Details": "Bulk notification management service"
+            }
+        ],
+        "Theme Park": [
+            {
+                "PackageName": "com.samsung.android.themedesigner",
+                "Details": "Theme Park is a service to create a theme and install it quickly and easily."
+            }
+        ],
+        "One Hand Operation +": [
+            {
+                "PackageName": "com.samsung.android.sidegesturepad",
+                "Details": "Control your phone or tablet more easily with just one hand."
+            }
+        ],
+        "EdgeTouch": [
+            {
+                "PackageName": "com.samsung.android.app.edgetouch",
+                "Details": "Prevent unintended operation by setting restriction on the edge of your Galaxy."
+            }
+        ],
+        "Keys Cafe": [
+            {
+                "PackageName": "com.samsung.android.keyscafe",
+                "Details": "Set up a keyboard that is tailored to you."
+            }
+        ],
+        "Good Lock": [
+            {
+                "PackageName": "com.samsung.android.goodlock",
+                "Details": "Dependency & Launcher"
+            }
+        ],
+        "QuickStar": [
+            {
+                "PackageName": "com.samsung.android.qstuner",
+                "Details": "Customize your special Quickpanel."
+            }
+        ],
+        "NavStar": [
+            {
+                "PackageName": "com.samsung.systemui.navillera",
+                "Details": "Create your own navigation bar."
+            }
+        ],
+        "Home Up": [
+            {
+                "PackageName": "com.samsung.android.app.homestar",
+                "Details": "Enjoy enhanced One UI Home experience."
+            }
+        ],
+        "RegiStar": [
+            {
+                "PackageName": "com.samsung.android.app.galaxyregistry",
+                "Details": "Conveniently configure the Settings app and press the side key, tap the back, or press the screen strongly to quickly launch useful features."
+            }
+        ],
+        "Nice Catch": [
+            {
+                "PackageName": "com.samsung.android.app.goodcatch",
+                "Details": "Got tired of mysterious vibration on your phone?Nice Catch is made to let you know which application starts the vibrations and annoys you."
+            }
+        ],
+        "Edge lighting+": [
+            {
+                "PackageName": "com.samsung.android.edgelightingplus",
+                "Details": "Add your own personal touch to your notifications. Enjoy fun effects when receiving notifications."
+            }
+        ],
+        "Sound Assistant": [
+            {
+                "PackageName": "com.samsung.android.soundassistant",
+                "Details": "Advanced sound utility for your Galaxy."
+            }
+        ],
+        "Wonderland": [
+            {
+                "PackageName": "com.samsung.android.wonderland.wallpaper",
+                "Details": "Create a moving wallpaper."
+            }
+        ]
+    }
+}

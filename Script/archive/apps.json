@@ -1,0 +1,170 @@
+{
+    "GoodLockModules": [
+        {
+            "Name": "Edge Lighting+",
+            "PackageName": "com.samsung.android.edgelightingplus",
+            "StoreID": "edge7",
+            "Description": "Custom notifications lighting effects."
+        },
+        {
+            "Name": "EdgeTouch",
+            "PackageName": "com.samsung.android.app.edgetouch",
+            "StoreID": "edgetouch",
+            "Description": "Prevent accidental edge touches."
+        },
+        {
+            "Name": "Good Lock",
+            "PackageName": "com.samsung.android.goodlock",
+            "StoreID": "good3",
+            "Description": "Module launcher & dependency handler."
+        },
+        {
+            "Name": "Home Up",
+            "PackageName": "com.samsung.android.app.homestar",
+            "StoreID": "home6",
+            "Description": "Enhance One UI Home."
+        },
+        {
+            "Name": "Keys Cafe",
+            "PackageName": "com.samsung.android.keyscafe",
+            "StoreID": "keyscafe",
+            "Description": "Customize and personalize keyboard."
+        },
+        {
+            "Name": "LockStar",
+            "PackageName": "com.samsung.systemui.lockstar",
+            "StoreID": "lockstar",
+            "Description": "Customize lock screen."
+        },
+        {
+            "Name": "MultiStar",
+            "PackageName": "com.samsung.android.multistar",
+            "StoreID": "multistar",
+            "Description": "Enhanced multi-window experience."
+        },
+        {
+            "Name": "NavStar",
+            "PackageName": "com.samsung.systemui.navillera",
+            "StoreID": "navstar",
+            "Description": "Create custom navigation bar."
+        },
+        {
+            "Name": "Nice Catch",
+            "PackageName": "com.samsung.android.app.goodcatch",
+            "StoreID": "nicecatch",
+            "Description": "Identify mystery vibration sources."
+        },
+        {
+            "Name": "Nice Shot",
+            "PackageName": "com.samsung.android.app.captureplugin",
+            "StoreID": "niceshot",
+            "Description": "Customize screen captures."
+        },
+        {
+            "Name": "NotiStar",
+            "PackageName": "com.samsung.systemui.notilus",
+            "StoreID": "notistar",
+            "Description": "Bulk notification management."
+        },
+        {
+            "Name": "One Hand Operation+",
+            "PackageName": "com.samsung.android.sidegesturepad",
+            "StoreID": "fiefzhkmy",
+            "Description": "One-handed mode gestures & shortcuts."
+        },
+        {
+            "Name": "QuickStar",
+            "PackageName": "com.samsung.android.qstuner",
+            "StoreID": "quickstar",
+            "Description": "Customize quick settings panel."
+        },
+        {
+            "Name": "RegiStar",
+            "PackageName": "com.samsung.android.app.galaxyregistry",
+            "StoreID": "registar",
+            "Description": "Customize side key, back tap & screen press actions."
+        },
+        {
+            "Name": "Sound Assistant",
+            "PackageName": "com.samsung.android.soundassistant",
+            "StoreID": "sound6",
+            "Description": "Audio utilities like per-app volumes."
+        },
+        {
+            "Name": "Theme Park",
+            "PackageName": "com.samsung.android.themedesigner",
+            "StoreID": "theme7",
+            "Description": "Quickly create and apply themes."
+        },
+        {
+            "Name": "Wonderland",
+            "PackageName": "com.samsung.android.wonderland.wallpaper",
+            "StoreID": "buwkeifec",
+            "Description": "Moving wallpapers and themes."
+        }
+    ],
+    "GoodGuardians": [
+        {
+            "Name": "Battery Guardian",
+            "PackageName": "com.samsung.android.statsd",
+            "StoreID": "battery10",
+            "Description": "Battery Guardian detects bad app's behavior and does not allow them running on your device."
+        },
+        {
+            "Name": "Battery Tracker",
+            "PackageName": "com.android.samsung.batteryusage",
+            "StoreID": "battery8",
+            "Description": "Battery Tracker lets you know the usage of applications within a day or week in your selected time. From now on, tracking the most battery consuming elements is easier than ever!"
+        },
+        {
+            "Name": "Galaxy App Booster",
+            "PackageName": "com.samsung.android.appbooster",
+            "StoreID": "bqymrzoig",
+            "Description": "Galaxy App Booster transfers executable files of each app to boost them up."
+        },
+        {
+            "Name": "Good Guardians - the new name of Galaxy Labs",
+            "PackageName": "com.android.samsung.utilityapp",
+            "StoreID": "ikphswywj",
+            "Description": "Improve your Galaxy smartphone's performance."
+        },
+        {
+            "Name": "Good Guardians Agent",
+            "PackageName": "com.android.samsung.utilityagent",
+            "StoreID": "",
+            "Description": "Dependency."
+        },
+        {
+            "Name": "Media File Guardian",
+            "PackageName": "com.samsung.android.mediaguardian",
+            "StoreID": "media1",
+            "Description": "Media guardian offers a way to delete hidden files for edited version. It provides a solution to clean media files that have stopped working."
+        },
+        {
+            "Name": "Memory Guardian",
+            "PackageName": "com.samsung.android.memoryguardian",
+            "StoreID": "memory7",
+            "Description": "Memory Guardian offers a way to track device performance based on memory usage, and provide function to clean up memory."
+        },
+        {
+            "Name": "Thermal Guardian",
+            "PackageName": "com.samsung.android.thermalguardian",
+            "StoreID": "thermal2",
+            "Description": "Thermal Guardian offers a way to track and manage device’s temperature."
+        }
+    ],
+    "ZSOnly": [
+        {
+            "Name": "Pentastic",
+            "PackageName": "com.samsung.android.app.routineplus",
+            "StoreID": "pentastic",
+            "Description": "Add your uniqueness to S pen with Pentastic!"
+        },
+        {
+            "Name": "Camera Assistant",
+            "PackageName": "com.samsung.android.app.cameraassistant.",
+            "StoreID": "dfrmzrfqu",
+            "Description": "Customize your own camera settings to your preference."
+        }
+    ]
+}
