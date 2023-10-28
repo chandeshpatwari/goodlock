@@ -1,7 +1,7 @@
 {
     "Good Lock": [
         {
-            "Name": "GOOD LOCK",
+            "Name": "<b>GOOD LOCK</b>",
             "PackageName": "com.samsung.android.goodlock",
             "StoreID": "good3",
             "Description": "Module launcher & dependency handler."
@@ -105,13 +105,13 @@
     ],
     "Good Guardians": [
         {
-            "Name": "GOOD GUARDIANS",
+            "Name": "<b>GOOD GUARDIANS</b>",
             "PackageName": "com.android.samsung.utilityapp",
             "StoreID": "ikphswywj",
             "Description": "Improve your Galaxy smartphone's performance."
         },
         {
-            "Name": "GOOD GUARDIANS AGENT",
+            "Name": "<b>GOOD GUARDIANS AGENT</b>",
             "PackageName": "com.android.samsung.utilityagent",
             "StoreID": "",
             "Description": "Dependency."

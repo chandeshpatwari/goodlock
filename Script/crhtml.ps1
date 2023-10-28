@@ -33,29 +33,23 @@ $htmlDesign = @'
         text-decoration: underline;
     }
 </style>
-<title>Samsung Addons</title>
+<title>Samsung OneUI Addons</title>
 </head>
 <body>
-<h1>Samsung Addons</h1>
+<h1>Samsung OneUI Addons</h1>
 '@
 
 # Generate content for all sections
-$htmlContent = ''
+$htmlContent = '<a href="market://details?id=yuh.yuh.finelock">Fine Lock: Launcher</a>'
 
-$sections = $data.PSObject.Properties.Name
-
-foreach ($section in $sections) {
+foreach ($section in $data.PSObject.Properties.Name) {
     $htmlContent += @"
 <h2>$section</h2>
 <ul>
 "@
-
-    foreach ($item in $data.$section) {
-        $htmlContent += @"
-    <li> <a href='$galaxyStore$($item.StoreID)'>$($item.Name)</a> <a href='market://details?id=$($item.PackageName)'>[Store]</a> <a href='$apkmirrorBase$($item.PackageName)' target='_blank'>[ApkMirror]</a> <a href='$apkmirrorBase$($item.PackageName)$android13Only' target='_blank'>[A13]</a>: $($item.Description)</li>
-"@
+    $htmlContent += $data.$section | ForEach-Object {
+        "<li> <a href='$galaxyStore$($_.StoreID)'>$($_.Name)</a> <a href='market://details?id=$($_.PackageName)'>[Store]</a> <a href='$apkmirrorBase$($_.PackageName)' target='_blank'>[ApkMirror]</a> <a href='$apkmirrorBase$($_.PackageName)$android13Only' target='_blank'>[A13]</a>: $($_.Description)</li>"
     }
-
     $htmlContent += '</ul>'
 }
 
@@ -69,4 +63,4 @@ $fullHTML = $htmlDesign + $htmlContent
 
 # Save the HTML content to the specified directory and file
 $fullHTML | Out-File "$PSScriptRoot\..\docs\index.html"
-Write-Host 'HTML page generated and saved.'
+Write-Host 'HTML page generated and saved.' -ForegroundColor Green
