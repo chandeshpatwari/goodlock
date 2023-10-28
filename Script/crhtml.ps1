@@ -50,7 +50,7 @@ foreach ($section in $data.PSObject.Properties.Name) {
     $htmlContent += $data.$section | ForEach-Object {
         "<li> <a href='$galaxyStore$($_.StoreID)'>$($_.Name)</a> <a href='market://details?id=$($_.PackageName)'>[Store]</a> <a href='$apkmirrorBase$($_.PackageName)' target='_blank'>[ApkMirror]</a> <a href='$apkmirrorBase$($_.PackageName)$android13Only' target='_blank'>[A13]</a>: $($_.Description)</li>"
     }
-    $htmlContent += '</ul>'
+    $htmlContent += "</ul>`n"
 }
 
 $htmlContent += @'
