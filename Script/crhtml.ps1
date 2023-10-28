@@ -1,29 +1,35 @@
+# Check if the 'apps.json' file exists
 if (!(Test-Path "$PSScriptRoot\apps.json")) {
+    Write-Host "The 'apps.json' file is missing. Exiting."
     Pause
     return
-} else {
-    $data = Get-Content "$PSScriptRoot\apps.json" | ConvertFrom-Json
+}
 
-    $galaxystore = 'https://galaxy.store/'
-    $apkmirrorbase = 'https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s='
-    $android13only = '&minapi-min=33&minapi-max=33'
+# Read data from 'apps.json' and convert it to a PowerShell object
+$data = Get-Content "$PSScriptRoot\apps.json" | ConvertFrom-Json
 
-    # Create an HTML content string with a black background and updated link styles
-    $htmlContent = @'
+# Define constants for URLs
+$galaxyStore = 'https://galaxy.store/'
+$apkmirrorBase = 'https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s='
+$android13Only = '&minapi-min=33&minapi-max=33'
+
+# Define the HTML design
+$htmlDesign = @'
 <!DOCTYPE html>
 <html>
 <head>
 <style>
     body {
-        background-color: black; /* Set the background color to black */
-        color: white; /* Set the text color to white */
+        background-color: black;
+        color: white;
+        font-family: JetBrains Mono; /* Change the font to Arial or any other preferred font */
     }
     a {
-        color: #00BFFF; /* Change the link color to a pleasant blue */
+        color: #00BFFF;
         text-decoration: none;
     }
     a:hover {
-        color: #1E90FF; /* Change the hover color to a lighter blue */
+        color: #1E90FF;
         text-decoration: underline;
     }
 </style>
@@ -31,34 +37,36 @@ if (!(Test-Path "$PSScriptRoot\apps.json")) {
 </head>
 <body>
 <h1>Samsung Addons</h1>
-
-<a href="market://details?id=yuh.yuh.finelock">Fine Lock</a>
 '@
 
-    # Generate content for all sections
-    $sections = @('Good Lock', 'Good Guardians', 'Z and S Series Exclusive')
-    foreach ($section in $sections) {
-        $htmlContent += @"
+# Generate content for all sections
+$htmlContent = ''
+
+$sections = $data.PSObject.Properties.Name
+
+foreach ($section in $sections) {
+    $htmlContent += @"
 <h2>$section</h2>
 <ul>
 "@
 
-        $sectionData = $data.($section -replace ' ', '')
-
-        foreach ($item in $sectionData) {
-            $htmlContent += @"
-    <li> <a href='$galaxystore$($item.StoreID)'>$($item.Name)</a> <a href='market://details?id=$($item.PackageName)'>[Store]</a> <a href='$apkmirrorbase$($item.PackageName)'>[ApkMirror]</a> <a href='$apkmirrorbase$($item.PackageName)$android13only'>[Android 13]</a>: $($item.Description)</li>
+    foreach ($item in $data.$section) {
+        $htmlContent += @"
+    <li> <a href='$galaxyStore$($item.StoreID)'>$($item.Name)</a> <a href='market://details?id=$($item.PackageName)'>[Store]</a> <a href='$apkmirrorBase$($item.PackageName)' target='_blank'>[ApkMirror]</a> <a href='$apkmirrorBase$($item.PackageName)$android13Only' target='_blank'>[A13]</a>: $($item.Description)</li>
 "@
-        }
-
-        $htmlContent += '</ul>'
     }
 
-    $htmlContent += @'
+    $htmlContent += '</ul>'
+}
+
+$htmlContent += @'
 </body>
 </html>
 '@
 
-    # Save the HTML content to the specified directory and file
-    $htmlContent | Out-File "$PSScriptRoot\..\docs\index.html"
-}
+# Combine the HTML design and content
+$fullHTML = $htmlDesign + $htmlContent
+
+# Save the HTML content to the specified directory and file
+$fullHTML | Out-File "$PSScriptRoot\..\docs\index.html"
+Write-Host 'HTML page generated and saved.'

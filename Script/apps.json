@@ -1,5 +1,5 @@
 {
-    "GoodLock": [
+    "Good Lock": [
         {
             "Name": "GOOD LOCK",
             "PackageName": "com.samsung.android.goodlock",
@@ -103,7 +103,7 @@
             "Description": "Moving wallpapers and themes."
         }
     ],
-    "GoodGuardians": [
+    "Good Guardians": [
         {
             "Name": "GOOD GUARDIANS",
             "PackageName": "com.android.samsung.utilityapp",
@@ -153,7 +153,7 @@
             "Description": "Track and manage device’s temperature."
         }
     ],
-    "ZandSSeriesExclusive": [
+    "Z and S Series Exclusive": [
         {
             "Name": "Pentastic",
             "PackageName": "com.samsung.android.app.routineplus",
