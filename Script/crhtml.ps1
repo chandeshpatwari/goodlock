@@ -40,8 +40,9 @@ $htmlDesign = @'
 '@
 
 # Generate content for all sections
-$htmlContent = '<a href="market://details?id=yuh.yuh.finelock">Fine Lock: Launcher</a>'
-
+$htmlContent = "`n"
+$htmlContent += '<a href="market://details?id=yuh.yuh.finelock">Fine Lock: Launcher</a>'
+$htmlContent += "`n"
 foreach ($section in $data.PSObject.Properties.Name) {
     $htmlContent += @"
 <h2>$section</h2>
